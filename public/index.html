@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat</title>
+    <link rel="icon" type="image/x-icon" href="WeChat.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="chat-div">
+        <div class="chat">
+        
+        </div>
+        
+        <div class="form-div">
+            <form class="form" id="chat-form">
+                <input class="inputBox" id="msg"
+                 type="text" placeholder="Enter the message" autocomplete="off">
+                <input class="submit-btn" type="submit" value="SEND"> 
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+    <!-- <script>
+        var messageBody = document.querySelector('.chat-div');
+        messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+    </script> -->
+</body>
+</html>

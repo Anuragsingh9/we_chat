@@ -1,0 +1,81 @@
+.chat-div{
+    max-width: 60%;
+    height: auto;
+    background-color: #e9e6ed;
+    margin: auto;
+    padding: 32px;
+}
+.form-div{
+    width: 80%;
+    text-align: center;
+
+    margin: auto;
+    margin-top: 5px;
+}
+.chat{
+    width: 80%;
+    height: 50vh;
+    border: 1px solid #929abd;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 4px;
+}
+.message{
+    max-width: 80%;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background: #d9d0bc;
+    margin: 5px 5px;
+    border-radius: 4px;
+}
+.welcome-msg{
+    color: green;
+}
+.left-msg{
+    color: red;
+}
+span{
+    word-wrap: break-word;
+        border-radius: 7px;
+        padding: 2px 5px;
+        overflow: hidden;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.inputBox{
+    width: 425px;
+    height: 28px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(84, 159, 209);
+    padding: 0 23px;
+}
+.inputBox:focus{
+    border: 2px solid rgb(84, 159, 209);
+}
+.submit-btn{
+    width: 90px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(84, 159, 209);
+    font-weight: bold;
+}
+.submit-btn:hover{
+    background-color: rgb(84, 159, 209);
+    color: white;
+}
+label{
+    color:rgb(31, 78, 109);
+    font-size: 18px;
+}
+span{
+    color: black;
+    font-size: 14px;
+}
