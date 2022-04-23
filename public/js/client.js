@@ -7,6 +7,7 @@ socket.emit('new-user',userName);
 const chatForm = document.getElementById('chat-form');
 
 socket.on('send-message', data =>{
+    audio.play();
     console.log('ll',data);
     sendMessage(data,'left');
 });
@@ -43,7 +44,6 @@ function sendMessage(data,position){
 
     const chat = document.querySelector('.chat').appendChild(div);
     console.log(chat);
-    audio.play();
 
     // scroll bar at the bottom
         var messageBody = document.querySelector('.chat');
@@ -76,7 +76,6 @@ function showUserLeftMsg(message){
 
     const chat = document.querySelector('.chat').appendChild(div);
     console.log(chat);
-
     // scroll bar at the bottom
         var messageBody = document.querySelector('.chat');
         messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
