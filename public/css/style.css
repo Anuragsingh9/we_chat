@@ -1,81 +1,124 @@
-.chat-div{
+.chat-div {
     max-width: 60%;
     height: auto;
-    background-color: #e9e6ed;
+    background-color: #120522;
     margin: auto;
     padding: 32px;
+    opacity: 0.9;
+    box-shadow: 1px 7px 29px -3px #57bf69;
+    border-radius: 5px;
 }
-.form-div{
+
+.form-div {
     width: 80%;
     text-align: center;
-
     margin: auto;
     margin-top: 5px;
 }
-.chat{
+
+.chat {
     width: 80%;
     height: 50vh;
     border: 1px solid #929abd;
     margin: auto;
     overflow-y: auto;
     border-radius: 4px;
+    box-shadow: 3px 0px 18px 0px #88889d;
 }
-.message{
+
+.message {
     max-width: 80%;
     padding: 5px;
     font-size: 20px;
     color: white;
-    background: #d9d0bc;
+    background: #e1e9e9;
     margin: 5px 5px;
     border-radius: 4px;
 }
-.welcome-msg{
+
+.welcome-msg {
     color: green;
 }
-.left-msg{
+
+.left-msg {
     color: red;
 }
-span{
+
+span {
     word-wrap: break-word;
-        border-radius: 7px;
-        padding: 2px 5px;
-        overflow: hidden;
+    border-radius: 7px;
+    padding: 2px 5px;
+    overflow: hidden;
 }
-.left{
+
+.left {
     float: left;
     clear: both;
 }
-.right{
+
+.right {
     float: right;
     clear: both;
 }
-.inputBox{
-    width: 425px;
+
+.inputBox {
+    width: 75%;
     height: 28px;
     outline: none;
     border-radius: 3px;
     border: 1px solid rgb(84, 159, 209);
     padding: 0 23px;
+    background-color: #261932;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 0px 16px -5px #88889d;
+
 }
-.inputBox:focus{
+
+.inputBox:focus {
     border: 2px solid rgb(84, 159, 209);
 }
-.submit-btn{
+
+.submit-btn {
     width: 90px;
     height: 30px;
     border-radius: 4px;
-    border: 1px solid rgb(84, 159, 209);
+    border: 1px solid #57bf69;
     font-weight: bold;
+    background-color: #57bf69;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 0px 16px -5px #88889d;
 }
-.submit-btn:hover{
-    background-color: rgb(84, 159, 209);
+
+.submit-btn:hover {
+    /*background-color: rgb(84, 159, 209);*/
+    background-color: #5469d1;
     color: white;
 }
-label{
-    color:rgb(31, 78, 109);
+label {
+    color: rgb(31, 78, 109);
     font-size: 18px;
 }
-span{
+span {
     color: black;
     font-size: 14px;
+}
+.self-badge {
+    color: white;
+    text-align: center;
+}
+.date{
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+}
+.name{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.msg{
+    margin-left: 5px;
 }

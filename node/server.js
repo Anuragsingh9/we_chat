@@ -1,5 +1,5 @@
 const path = require('path');
-const http =require('http');
+const http = require('http');
 const express = require('express');
 const socketIo = require('socket.io');
 
@@ -11,24 +11,19 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 const users = {};
 
-io.on('connection', socket =>{
-    console.log('established');
-    
-    socket.on('new-user',username =>{
+io.on('connection', socket => {
+    socket.on('new-user', username => {
         users[socket.id] = username;
-        socket.broadcast.emit('new-joined',username);
+        console.log('established', socket.id);
+        socket.broadcast.emit('new-joined', username);
+        socket.emit('self-badge', username);
+    });
+    socket.on('disconnect', () => {
+        socket.broadcast.emit('user-left', users[socket.id]);
     });
 
-    // socket.emit('message','Welcome to WeChat');
-
-    // socket.broadcast.emit('message','A user has joined the chat');
-
-    socket.on('disconnect',() =>{
-        socket.broadcast.emit('user-left',users[socket.id]);
-    });
-
-    socket.on('chat-message',msg =>{
-        socket.broadcast.emit('send-message',{message:msg, user:users[socket.id]});
+    socket.on('chat-message', msg => {
+        socket.broadcast.emit('send-message', {message: msg, user: users[socket.id]});
     });
 
     // socket.on('chat-message',msg =>{
